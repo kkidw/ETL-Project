@@ -30,4 +30,9 @@
     transform:scale(1.8);
 }
 
+.centertable {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*# sourceMappingURL=bootstrap.min.css.map */
