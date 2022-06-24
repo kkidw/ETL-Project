@@ -75,36 +75,25 @@
   </head>
   <body>
     
-<header>
-  <div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">About</h4>
-          <p class="text-white">Using multiple data sources, we compiled, cleaned, and combined the data in multiple iterations to compare various aspects of Disney+, Hulu, Netflix, and Amazon Prime Video content.</p>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="https://github.com/kkidw/Project2" class="text-white">Github Repo</a></li>
-            <li><a href="https://getbootstrap.com/docs/5.2/examples/album/" class="text-white">Bootstrap Theme</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <i class="material-icons">query_stats</i>
-        <strong>&nbsp; An In-Depth Comparison of Four Major Streaming Services</strong>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </div>
-</header>
+    <header>
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                <span class="fs-4"><i class="material-icons">query_stats</i>
+                &nbsp; An In-Depth Comparison of Four Major Streaming Services</span>
+              </a>
+        
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="genre.html" class="nav-link active" aria-current="page">Genres</a></li>
+                <li class="nav-item"><a href="type.html" class="nav-link">Types</a></li>
+                <li class="nav-item"><a href="year.html" class="nav-link">Years</a></li>
+                <li class="nav-item"><a href="process.html" class="nav-link">Process</a></li>
+              </ul>
+            </header>
+          </div>
+    </header>
 
 <main>
 
@@ -118,24 +107,40 @@
 
   <main class="container">
     <div class="row g-5">
-    <div class="col-md-8">
-      <h3 class="pb-4 mb-4 fst-italic border-bottom">
-        From the Firehose
-      </h3>
-
+    <div class="col-md-12">
       <article class="blog-post">
-        <h2 class="blog-post-title mb-1">Sample blog post</h2>
-        <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
         <div class="row g-5">
-            <div class="col-md-4">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
             <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
             <hr>
             <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+            <br>
+            <br>
             </div>
-            <div class="col-md-8">
-            <img src="genres/prime_genres.jpg" width="90%" height="90%">
+            <div class="col-md-2"></div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <img src="genres/prime_genres.jpg" width="100%" height="100%" class="expand">
+            </div>
+            <div class="col">
+                <img src="genres/netflix_genres.jpg" width="100%" height="100%" class="expand">
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <img src="genres/hulu_genres.jpg" width="100%" height="100%" class="expand">
+            </div>
+            <div class="col">
+                <img src="genres/disney_genres.jpg" width="100%" height="100%" class="expand">
+            </div>
+            <div class="col"></div>
             </div>
         </div>
+    </div>
         
         <h2>Blockquotes</h2>
         <p>This is an example blockquote in action:</p>
@@ -252,49 +257,8 @@
 
     </div>
 
-    <div class="col-md-4">
-      <div class="position-static" style="top: 2rem;">
-        <div class="p-4 mb-3 bg-light rounded">
-            <h4 class="fw-light"><a href="index.html">Home</a></h4>
-          <a href="index.html">
-            <img src="https://images.pexels.com/photos/1444416/pexels-photo-1444416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%" height="100%">
-            </a>
-          <p class="mb-0">Using multiple data sources, we compiled, cleaned, and combined the data in multiple iterations to compare various aspects of Disney+, Hulu, Netflix, and Amazon Prime Video content.</p>
-        </div>
 
-        <div class="p-4 mb-3 bg-light rounded">
-            <h4 class="fw-light"><a href="genre.html">Comparison of Primary Genres</a></h4>
-            <a href="genre.html">
-                <img src="https://images.pexels.com/photos/5082566/pexels-photo-5082566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%" height="100%">
-                </a>
-            <p class="mb-0">An interesting look into the top genres for each major streaming service and how they differ.</p>
-          </div>
 
-        <div class="p-4 mb-3 bg-light rounded">
-            <h4 class="fw-light"><a href="type.html">Content Type Analysis (Movie vs TV Shows)</a></h4>
-            <a href="type.html">
-                <img src="https://images.pexels.com/photos/2398354/pexels-photo-2398354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%" height="100%">
-                </a>
-            <p class="mb-0">A breakdown of the type of content (movies vs tv shows) in each of the four major streaming services.</p>
-          </div>
-
-        <div class="p-4 mb-3 bg-light rounded">
-            <h4 class="fw-light"><a href="year.html">Analysis of Content by Release Year</a></h4>
-            <a href="year.html">
-                <img src="https://images.pexels.com/photos/4009409/pexels-photo-4009409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%" height="100%">
-                </a>
-            <p class="mb-0">Which streaming service has more older shows and movies? Which is more up to date? Let's find out.</p>
-          </div>
-
-        <div class="p-4">
-          <h4 class="fst-italic">Elsewhere</h4>
-          <ol class="list-unstyled">
-            <li><a href="https://github.com/kkidw/Project2">Github Repo</a></li>
-            <li><a href="https://getbootstrap.com/docs/5.2/examples/album/">Bootstrap Theme</a></li>
-          </ol>
-        </div>
-      </div>
-    </div>
   </div>
 </main>
 
